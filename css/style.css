@@ -1,0 +1,272 @@
+@charset "UTF-8";
+
+	header {
+		background-color: white;
+		height: 100px;
+		display: none;
+		box-shadow: 3px 3px 8px gray;
+	}
+
+	.header__item_menu {
+		display: none;
+	}
+
+	.header__item_menu > ul > li {
+		margin-top: 15px;
+	}
+
+	a:hover {
+		text-decoration: none;
+	}
+
+	.row {
+		height: 100%;
+	}
+
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		text-align: center;
+	}
+
+	.body__slide {
+		display: none;
+		width: 100%;
+		height: 100%;
+		background: rgba(255,255,255,0.7);
+		font-weight: bold;
+	}
+
+	.body__slide > ul {
+		position: absolute;
+		top: 30%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+	}
+
+	.body__slide > ul > li {
+		margin-bottom: 130px;
+		font-size: 20px;
+	}
+
+	.body__slide > ul > li > a,
+	.header__item_menu > ul > li > a {
+		color: black;
+		font-family: 'Sawarabi Mincho', sans-serif;
+	}
+
+	.body__slide > ul > li > a:hover,
+	.header__item_menu > ul > li > a:hover {
+		color: gray;
+		border-bottom-style: groove;
+		border-color: gray;
+		border-width: 1px;
+
+	}
+
+	.header__inner,
+	.header-btn__inner,
+	.header-image__inner,
+	.footer__inner{
+		height: 100%;
+	}
+
+	.header-btn {
+		display: none;
+		height: 10%;
+	}
+
+	.header-btn__item_logo {
+		width: 100%;
+		height: 100%;
+	}
+
+	.header-btn__item_logo > a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+
+	.header-image {
+		height: 850px;
+		background-image: url("../image/header-image.jpg");
+		background-size: cover;
+		background-attachment: fixed;
+		color: white;
+	}
+
+	.header-image__item_heading {
+		font-family: 'Vollkorn', serif;
+	}
+
+	.header-image__item_menu > ul > li > a {
+		color: white;
+		font-family: 'Sawarabi Mincho', sans-serif;
+	}
+
+	.header-image__item_menu > ul > li > a:hover {
+		color: #D3D3D3;
+	}
+
+	.my-parts-hidden {
+		display: none;
+	}
+
+	#my-parts-icon {
+	  	cursor: pointer;
+		display: inline-block;
+		height: 50px;
+		position: relative;
+		width: 50px;
+	}
+
+	#my-parts-icon span {
+		background:  #333;
+		border-radius: 4px;
+		display: block;
+		height: 16%;
+		left: 50%;
+		margin: -8% 0 0 -42%;
+		position: absolute;
+		top: 50%;
+		transition: all 0.3s ease-in-out;
+		width: 84%;
+	}
+
+	#my-parts-icon span::before,
+	#my-parts-icon span::after {
+		-webkit-transform: rotate(0);
+		background: #333;
+		border-radius: 4px;
+		content: "";
+		display: block;
+		height: 100%;
+		left: 50%;
+		margin: -8% 0 0 -50%;
+		position: absolute;
+		top: 50%;
+		transform: rotate(0);
+		transition: all 0.3s ease-in-out;
+		width: 100%;
+	}
+
+	#my-parts-icon span::before {
+		margin-top: -38%;
+	}
+
+	#my-parts-icon span::after {
+		margin-top: 19%;
+	}
+
+	#my-parts-checkbox:checked ~ #my-parts-icon span {
+		background: rgba(51, 51, 51, 0);
+	}
+
+	#my-parts-checkbox:checked ~ #my-parts-icon span::before,
+	#my-parts-checkbox:checked ~ #my-parts-icon span::after {
+		content: "";
+		display: block;
+		height: 100%;
+		left: 50%;
+		margin: -8% 0 0 -42%;
+		position: absolute;
+		top: 50%;
+		width: 100%;
+	}
+
+	#my-parts-checkbox:checked ~ #my-parts-icon span::before {
+		-webkit-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+
+	#my-parts-checkbox:checked ~ #my-parts-icon span::after {
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+
+	main {
+		height: 54%;
+		margin-bottom: 80px;
+	}
+
+	.heading {
+		text-align:center;
+		font-size: 40px;
+		margin-top: 80px;
+		font-weight: lighter;
+		font-family: 'Vollkorn', serif;
+	}
+
+	.heading > span {
+		border-bottom-style: groove;
+	}
+
+	.heading-jap {
+		text-align: center;
+		margin-bottom: 70px;
+		font-family: 'Sawarabi Mincho', sans-serif;
+	}
+
+	.appeal__item {
+		height: 400px;
+	}
+
+	.item-heading {
+		font-size: 18px;
+		border-bottom-style: groove;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	.appeal__item_text {
+		height: 320px;
+		text-align: justify;
+	}
+
+	.portfolio__item {
+		margin-bottom: 60px;
+	}
+
+	.video{
+		position:relative;
+		width:100%;
+		padding-top:56.25%;
+	}
+
+	.video iframe{
+		position:absolute;
+		top:0;
+		right:0;
+		width:100%;
+		height:100%;
+	}
+
+	.portfolio__item_text {
+		text-align: justify;
+		height: 300px;
+		overflow: scroll;
+	}
+
+	.portfolio__item_text > span {
+		border-bottom-style: groove;
+	}
+
+
+
+	footer {
+		height: 100px;
+		text-align: center;
+		background-color: #504c4b;
+		color: white;
+	}
+
+	.footer__heading {
+		 padding-top: 15px;
+		 font-family: 'Vollkorn', serif;
+		 font-weight: lighter;
+	}
